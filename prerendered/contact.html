@@ -7,7 +7,6 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
 		<link href="./_app/immutable/assets/_layout-024933cf.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page-1e6a6c56.css" rel="stylesheet">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -24,14 +23,47 @@
 	<div class="corner svelte-pogd4k"><a href="https://github.com/sebasop320" class="svelte-pogd4k"><img src="/_app/immutable/assets/github-1ea8d62e.svg" alt="GitHub" class="svelte-pogd4k"></a></div>
 </header>
 
-	<main class="svelte-8o1gnw"><form><label>Name</label>
+	<main class="svelte-8o1gnw"><title>Let&#39;s have a talk</title>
+<h1>Let&#39;s have a talk
+<style>h1{
+    color: #f25416;
+    font-family: 'Bold'
+    font-weight: 'bold';
+    font-size: 4em;
+  }
+  </style></h1>
+
+<form><label>Name</label>
   <input type="text" name="user_name">
   <label>Email</label>
-  <input type="email" name="user_email" class="svelte-15q7wp9">
+  <input type="email" name="user_email">
   <label>Message</label>
-  <textarea name="message" class="svelte-15q7wp9"></textarea>
-  <input type="submit" value="Send" class="svelte-15q7wp9">
-</form></main>
+  <textarea name="message"></textarea>
+  <input type="submit" value="Send">
+<style>/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+</style></form></main>
 
 	<footer class="svelte-8o1gnw"><p>Visit <a href="https://github.com/sebasop320" class="svelte-8o1gnw">My github</a> To learn more </p>
 		<p>Made with ❤️ using <a href="https://svelte.dev" class="svelte-8o1gnw">svelte</a></p></footer>
