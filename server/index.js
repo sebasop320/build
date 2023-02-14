@@ -2995,7 +2995,23 @@ function set_paths(paths) {
   base = paths.base;
   assets = paths.assets || base;
 }
-const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n";
+const app_template = ({ head, body, assets: assets2, nonce }) => `<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-F2YWDFMRNP"><\/script>
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F2YWDFMRNP');
+	<\/script>		
+
+
+
+		<meta charset="utf-8" />
+		<link rel="icon" href="` + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n";
 const error_template = ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -3075,7 +3091,7 @@ class Server {
       app_template,
       app_template_contains_nonce: false,
       error_template,
-      version: "1676405128419"
+      version: "1676418611643"
     };
   }
   /**
