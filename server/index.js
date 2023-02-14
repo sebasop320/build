@@ -3075,7 +3075,7 @@ class Server {
       app_template,
       app_template_contains_nonce: false,
       error_template,
-      version: "1676334796692"
+      version: "1676402673993"
     };
   }
   /**
