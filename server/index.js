@@ -2998,17 +2998,15 @@ function set_paths(paths) {
 const app_template = ({ head, body, assets: assets2, nonce }) => `<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-F2YWDFMRNP"><\/script>
+			<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TNQZ8BJ0PF"><\/script>
 	<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F2YWDFMRNP');
-	<\/script>		
-
-
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'G-TNQZ8BJ0PF');
+	<\/script>
+	<!-- End of Google Tag-->
 
 		<meta charset="utf-8" />
 		<link rel="icon" href="` + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n";
@@ -3091,7 +3089,7 @@ class Server {
       app_template,
       app_template_contains_nonce: false,
       error_template,
-      version: "1676418611643"
+      version: "1676419213815"
     };
   }
   /**
