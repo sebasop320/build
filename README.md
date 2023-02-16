@@ -13,3 +13,11 @@ server improvement & optimization
 Adding google searh console test
 
 optimization
+
+# Build 
+
+16/02/23
+
+Mayor bug fix 
+EmailJs mayor bug fix 
+SSR imporvment
